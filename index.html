@@ -261,7 +261,7 @@ body{font-family:'Outfit',sans-serif;background:#F8F6F1;color:#1A2535;overflow-x
    SECTION 2 — PLAT MAP
 ══════════════════════════════════════════ */
 #plat{background:var(--navy);padding:90px 0}
-.plat-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.plat-layout{display:grid;grid-template-columns:1fr 1.35fr;gap:4rem;align-items:center}
 .plat-left .section-title{color:var(--white)}
 .plat-left .section-body{color:rgba(255,255,255,.65)}
 .phase-tabs{display:flex;gap:.5rem;margin:2rem 0}
@@ -272,6 +272,8 @@ body{font-family:'Outfit',sans-serif;background:#F8F6F1;color:#1A2535;overflow-x
   border:1px solid rgba(255,255,255,.1);transition:all .25s;
 }
 .phase-tab.active{background:var(--gold);color:var(--white);border-color:var(--gold)}
+.phase-tab.phase-two.active{background:#2D7A4A;border-color:#2D7A4A}
+.phase-tab.phase-three.active{background:#1E5A8A;border-color:#1E5A8A}
 .phase-tab:hover:not(.active){background:rgba(255,255,255,.12);color:var(--white)}
 .plat-map-frame{
   position:relative;border:2px solid rgba(201,151,42,.3);
@@ -883,8 +885,8 @@ footer{background:#070E1A;padding:5rem 0 2.5rem}
         <p class="section-body white reveal reveal-d2">San Sebastian's carefully designed site plan delivers three residential phases and a prime commercial corridor along Highway 77. Each phase is thoughtfully laid out to maximize livability, green space, and connectivity throughout the community.</p>
         <div class="phase-tabs reveal reveal-d3">
           <button class="phase-tab active" onclick="setPhase(this,'Phase One')">Phase One</button>
-          <button class="phase-tab" onclick="setPhase(this,'Phase Two')">Phase Two</button>
-          <button class="phase-tab" onclick="setPhase(this,'Phase Three')">Phase Three</button>
+          <button class="phase-tab phase-two" onclick="setPhase(this,'Phase Two')">Phase Two</button>
+          <button class="phase-tab phase-three" onclick="setPhase(this,'Phase Three')">Phase Three</button>
         </div>
         <div id="phaseDesc" style="font-size:.85rem;line-height:1.75;color:rgba(255,255,255,.6);min-height:60px;transition:opacity .3s">
           Phase 1 is currently underway — comprising 56 lots ready for commencement. Anticipated completion: April 2025.
